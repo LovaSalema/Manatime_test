@@ -14,13 +14,7 @@ import entretien from '../../assets/Images/ManatimeTest_Library/Module_Entretien
 import material from '../../assets/Images/ManatimeTest_Library/Module_Matériels.svg';
 import doc from '../../assets/Images/ManatimeTest_Library/Mdule_Documents.svg';
 import rh from '../../assets/Images/ManatimeTest_Library/Module_RH.svg';
-// const Item = styled(Paper)(({ theme }) => ({
-//   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-//   ...theme.typography.body2,
-//   padding: theme.spacing(2),
-//   textAlign: 'center',
-//   color: theme.palette.text.secondary,
-// }));
+
 
 
 export default function ResponsiveGrid() {
