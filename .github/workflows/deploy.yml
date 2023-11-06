@@ -18,10 +18,10 @@ jobs:
       - name: Install dependencies
         run: npm install
       - run: |
-git remote set-url origin https://git:${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}@github.com/${Manatime_test}.git
+git remote set-url origin https://git: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@github.com/Manatime_test.git
 npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
 env:
-GITHUB_TOKEN: ${{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}}
+GITHUB_TOKEN: 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
           CI: true
 
 
