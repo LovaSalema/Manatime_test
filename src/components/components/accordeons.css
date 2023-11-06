@@ -1,0 +1,21 @@
+.acc{
+    background: red;
+    color: white;
+}
+
+/* i{
+    color: white;
+} */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox */
+::-moz-scrollbar {
+    display: none;
+}
+
+/* Edge/Internet Explorer */
+::-ms-scrollbar {
+    display: none;
+}

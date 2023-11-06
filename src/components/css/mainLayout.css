@@ -1,0 +1,20 @@
+.accordion-box{
+    background: linear-gradient(to bottom, #094694, #0096FF);
+}
+
+/* In a CSS file, e.g., poppins.css */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../assets/font/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('../../assets/font/Poppins-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* Add more @font-face rules for different weights and styles as per your downloaded fonts */
+  
