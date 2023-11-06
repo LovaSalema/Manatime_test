@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --repo https://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@github.com/LovaSalema/Manatime_test.git",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
