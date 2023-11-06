@@ -1,7 +1,6 @@
 
-import { experimentalStyled as styled } from '@mui/material/styles';
+
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Card from '@mui/material/Card';
 import absence from '../../assets/Images/ManatimeTest_Library/Module_Absences.svg'
 import Typography from '@mui/material/Typography'
@@ -15,13 +14,13 @@ import entretien from '../../assets/Images/ManatimeTest_Library/Module_Entretien
 import material from '../../assets/Images/ManatimeTest_Library/Module_Matériels.svg';
 import doc from '../../assets/Images/ManatimeTest_Library/Mdule_Documents.svg';
 import rh from '../../assets/Images/ManatimeTest_Library/Module_RH.svg';
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(2),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-}));
+// const Item = styled(Paper)(({ theme }) => ({
+//   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+//   ...theme.typography.body2,
+//   padding: theme.spacing(2),
+//   textAlign: 'center',
+//   color: theme.palette.text.secondary,
+// }));
 
 
 export default function ResponsiveGrid() {
@@ -87,6 +86,7 @@ export default function ResponsiveGrid() {
       <Box sx={{display:"flex", flexDirection:'row', gap:'8px'}}>
       {cards.slice(0,4).map((item, index)=>(
         <Card 
+        key={index}
         sx={{width:"170px", 
         height:'170px', 
         display:'flex', 
@@ -114,6 +114,7 @@ export default function ResponsiveGrid() {
       <Box sx={{display:"flex", flexDirection:'row', gap:'8px'}}>
       {cards.slice(4,8).map((item, index)=>(
         <Card 
+        key={index}
         sx={{width:"170px", 
         height:'170px', 
         display:'flex', 
@@ -140,6 +141,7 @@ export default function ResponsiveGrid() {
       <Box sx={{display:"flex", flexDirection:'row', gap:'8px'}}>
       {cards.slice(8,11).map((item, index)=>(
         <Card 
+        key={index}
         sx={{width:"170px", 
         height:'170px', 
         display:'flex', 

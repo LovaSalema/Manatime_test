@@ -24,9 +24,9 @@ import { Breadcrumbs, Link, Stack } from '@mui/material';
 import Accordions from './components/accordeons';
 import './css/mainLayout.css';
 import Logo from '../assets/Images/ManatimeTest_Library/Logo.svg';
-import ResponsiveGrid from './components/CardGroup';
 import graphisme from '../assets/Images/ManatimeTest_Library/Graphic.svg';
 import TableData from './components/TableData';
+import ResponsiveGrid from './components/CardGroup';
 const drawerWidth = 1000;
 
 const openedMixin = (theme: Theme): CSSObject => ({
