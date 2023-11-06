@@ -20,6 +20,8 @@ const Accordions = () => {
 
     const handleChange = (panel: string) => (event: React.ChangeEvent<{}>, isExpanded: boolean) => {
       setExpanded(isExpanded ? panel : false);
+      console.log(event);
+      
     };
     const tab =[
         {
