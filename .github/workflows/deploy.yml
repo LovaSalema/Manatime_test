@@ -9,13 +9,22 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-        - name: Deploy with gh-pages
-          
-          
-- run: |
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14.x"
+      - name: Install dependencies
+        run: npm install
+      - name: Build and deploy to GitHub Pages
+        run: npm run deploy
+        env:
+          CI: true
+
+- name: Deploy with gh-pages
+run: |
 git remote set-url origin https://git:${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}@github.com/${Manatime_test}.git
 npx gh-pages -d dist -u "github-actions-bot <support+actions@github.com>"
 env:
 GITHUB_TOKEN: ${{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}}
-CI: true
-
