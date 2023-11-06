@@ -17,10 +17,10 @@ jobs:
           node-version: "14.x"
       - name: Install dependencies
         run: npm install
-      - run: git remote set-url origin https://git:${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}@github.com/${https://github.com/LovaSalema/Manatime_test}.git
+      - run: git remote set-url origin https://git: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@github.com/LovaSalema/Manatime_test.git
 npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
 env:
-GITHUB_TOKEN: ${{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}}
+GITHUB_TOKEN: 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
           CI: true
 
 
