@@ -21,6 +21,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@mui/icons-material": "^5.14.16",
     "@mui/material": "^5.14.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
@@ -36,6 +38,4 @@
     "vite": "^4.4.5"
   },
   "homepage": "https://LovaSalema.github.io/Manatime_test/"
-
-  
 }
