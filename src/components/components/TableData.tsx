@@ -68,7 +68,7 @@ type Props = {
 export default function TableData(props: Props) {
   
   const [data, setData] = useState<Data[]>([{
-    id: 0,
+    id: -1,
     user: '',
     categorie: '',
     period: '',
