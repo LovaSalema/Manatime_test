@@ -197,9 +197,8 @@ export default function TableData(props: Props) {
             </TableRow>
           </TableHead>
           <TableBody>
-            {! data[1]?.id? (<p style={{textAlign:'center'}}>Aucune donnée</p>
-           ): 
-            data?.slice(1, data.length).map((row, index) => (
+            {data[1]?.categorie? 
+            (data?.slice(1, data.length).map((row, index) => (
               <StyledTableRow key={''}>
                 <StyledTableCell  scope="row" align='left' sx={{fontSize:'16px',minWidth:'150px'}}>
                   {row.user}
@@ -216,10 +215,10 @@ export default function TableData(props: Props) {
                   <img src={solder} style={{marginLeft:'45px'}} width='32px'></img>
                   <Button variant='contained' color='error' style={{marginLeft:'15px', marginBottom:'22px'}} onClick={()=>handleSuppr(row.id)} >Supprimer</Button>
                   </Box>
-                  
                 </StyledTableCell>
               </StyledTableRow>
-            ))}
+            ))):(<p style={{textAlign:'center'}}>Aucune donnée</p>
+            )}
           </TableBody>
         </Table>
       </TableContainer>
