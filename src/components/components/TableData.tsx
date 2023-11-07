@@ -198,7 +198,7 @@ export default function TableData(props: Props) {
           </TableHead>
           <TableBody>
             {! data[1]?.id? (<p style={{textAlign:'center'}}>Aucune donnée</p>
-           ):
+           ): 
             data?.slice(1, data.length).map((row, index) => (
               <StyledTableRow key={''}>
                 <StyledTableCell  scope="row" align='left' sx={{fontSize:'16px',minWidth:'150px'}}>
